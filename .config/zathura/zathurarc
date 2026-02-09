@@ -1,0 +1,14 @@
+set selection-clipboard clipboard
+# set default-bg "#000000" #00
+# set default-fg "#F7F7F6" #01
+set adjust-open "best-fit"
+set pages-per-row 1
+# set recolor "true"
+unmap f
+map f toggle_fullscreen
+map [fullscreen] f toggle_fullscreen
+set window-height 1200
+set window-width 1920
+set recolor-darkcolor "rgba(235,219,178,1)"
+set recolor-lightcolor "rgba(30,30,30,1)"
+set default-bg "rgba(0,0,0,0)"
