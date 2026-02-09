@@ -5,7 +5,7 @@
 | desktop environment | hyprland |
 |notification | dunst | 
 | bluetooth | blueman |
-| audio | wireplumber + pulseaudio (yeah i have both lol idk why) |
+| audio | wireplumber + pulseaudio<br>(yeah i have both lol idk why) |
 | editor | neovim (nvchad)|
 | application launcher | rofi |
 | top bar | waybar |
