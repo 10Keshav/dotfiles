@@ -3,17 +3,17 @@
 | usage | the package |
 |----|-------------------|
 | desktop environment | hyprland |
-|notification | dunst | 
+| terminal emulator | kitty| 
+| top bar | waybar |
+| file manager | nemo (gui), yazi (tui) |
+| application launcher | rofi |
+| editor | neovim (nvchad)|
+| pdf viewer | zathura|
+| notification | dunst | 
 | bluetooth | blueman |
 | audio | wireplumber + pulseaudio<br>(yeah i have both lol idk why) |
-| editor | neovim (nvchad)|
-| application launcher | rofi |
-| top bar | waybar |
-| terminal emulator | kitty| 
-| file manager | nemo (gui), yazi (tui) |
 | image| qimgv|
-| pdf viewer | zathura|
-| ppt, docs and all | libre office |
 | logout manager? | wlogout |
+| ppt, docs and all | libre office |
 
 
