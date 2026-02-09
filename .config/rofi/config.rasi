@@ -1,0 +1,179 @@
+configuration {
+  modi: "drun,filebrowser";
+  filebrowser {
+    show-hidden: true;
+    directory: "/home/keshav/";
+    command: "xdg-open";
+  }
+  show-icons: true;
+  display-drun: "";
+  display-filebrowser: "";
+  drun-display-format: "{name}";
+  //window-format: "{w}  {c}  {t}";
+}
+
+* {
+  font: "Hack 14";
+  highlight: none;
+  // background: rgba (0, 0, 10, 0%);
+  // background: #000332;
+  // background-alt:#000340;
+  background: #000011;
+  background-alt: #000034;
+  foreground: #EEEEEE;
+  selected: #000050;
+  // active: #E9CC9D;
+  // urgent: #FEA861;
+}
+/* window */
+window {
+  expand: false;
+  enabled: true;
+  fullscreen: false;
+  transparency: "real";
+  location: center; /* the offset vals work if location is north fsr man idk */
+  x-offset: 0;
+  y-offset: 0;
+  anchor: center;
+  // height: 40%;
+  // width: 510px;
+  width: 25%;
+  margin: 0;
+  border-radius: 16px;
+  border: 2;
+  border-color: @selected;
+ // background-color: @background;
+}
+/* boxes ig */
+mainbox {
+  enabled: true;
+  background-color: transparent;
+  // background-image: url("~/idkwallpapor/shiverdreamywhat.jpeg",height);
+  spacing: 4px;
+  orientation: vertical;
+  children: ["inputbar", "listbox"];
+}
+
+/* list related */
+listbox {
+  enabled: true;
+  spacing: 4px;
+  orientation: vertical;
+  padding: 4px 5px;
+  children: ["listview"];
+}
+
+listview {
+  enabled: true;
+  border: none;
+  background-color: transparent;
+  fixed-height: false;
+  dynamic: true;
+  lines: 10;
+  cycle: false;
+  spacing: 4px;
+  columns: 2;
+  scrollbar: false;
+}
+scrollbar {
+  background-color: @background-alt;
+  handle-color: @foreground;
+}
+/* searchbar and all */
+inputbar {
+  enabled: true;
+  padding: 4px 8px;
+  margin: 2px;
+  // border-radius: 16px;
+  spacing: 0px;
+  orientation: horizontal;
+  background-color: transparent;
+  children: [ "entry", "num-filtered-rows", "textbox", "num-rows", "dummy", "mode-switcher"];
+}
+// textbox-prompt-colon {
+//   enabled: true;
+//   padding: 2px 4px;
+//   margin: 0;
+//   border-radius: 100%;
+//   expand: false;
+//   str: " ";
+//   background-color: @background-alt;
+// }
+num-filtered-rows,num-rows,textbox{
+  font: "mono 12";
+  text-color: #888888;
+  margin: 8px 0 0 0; 
+  expand: false;
+  content: "/";
+}
+num-filtered-rows {
+  padding: 0 0 0 9px;
+}
+
+entry {
+  enabled: true;
+  padding: 6px 14px;
+  border-radius: 16px;
+  width: 12%;
+  expand: false;
+  placeholder: "Search";
+  background-color: @background-alt;
+  // width: 10px;
+}
+dummy {
+  expand: true;
+  background-color: transparent;
+}
+
+/* mode switcher and the buttons */
+mode-switcher {
+  expand: false;
+  enabled: true;
+  background-color: transparent;
+  text-color: @foreground;
+  spacing: 4px;
+  // border-radius: 16px;
+}
+button {
+  font: "JetBrainsMono Mono Nerd Font 17";
+  background-color: @background-alt;
+  text-color: @foreground;
+  border-radius: 10px;
+  width: 55px;
+  padding: 0px 8px;
+  margin: 0;
+  padding: 0 6px 0 0;
+}
+button selected {
+  background-color: @selected;
+}
+
+/* elemens */
+element {
+  enabled: true;
+  padding: 7px;
+  border-radius: 4px;
+}
+element normal.normal {
+  background-color: transparent;
+  text-color: @foreground;
+}
+element normal.active {
+  // background-color: ;
+  // text-color: @foreground;
+}
+element normal.urgent, element selected.urgent {
+  // background-color: @urgent;
+  // text-color: @foreground;
+}
+element selected.normal {
+  background-color: @selected;
+  text-color: @foreground;
+}
+element selected.active {
+  // background-color: @selected ;
+  // text-color: @foreground;
+}
+element alternate.normal, element alternate.active, element alternate.urgent {
+  background-color: transparent;
+}

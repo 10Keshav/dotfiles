@@ -1,0 +1,66 @@
+# format = """
+# [ ](fg:#0002ba)\
+# $directory\
+# [ ](fg:#0002ba bg:#00a0ba)\
+# $git_branch\
+# $git_status\
+# [ ](fg:#00a0ba)
+# """
+format = """
+ $directory\
+ $git_branch\
+ $git_status
+ $status\
+"""
+# right_format = """
+# [ ](fg:#0003ab)\
+# $time\
+# [](fg:#0003ab)\
+# """
+right_format = """
+$cmd_duration\
+"""
+
+[status]
+style = 'bg:transparent'
+symbol = '[](fg:#ff0000)'
+sigint_symbol = '[](fg:#ff0000)'
+success_symbol = '[](fg:#00ff00)'
+format = '[$symbol]($style) '
+disabled = false
+
+
+[cmd_duration]
+min_time = 200
+style = "fg:#dcdcdc"
+format = '[$duration ]($style)'
+
+[directory]
+# style = "bg:#0002ba"
+style = "fg:#00faef"
+format = "[$path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[directory.substitutions]
+"Documents" = "󰈙 Documents"
+"Downloads" = " Downloads"
+"Music" = " Music"
+"Pictures" = " Pictures"
+
+[git_branch]
+symbol = " "
+# style = "bg:#00a0ba"
+style = "fg:#fdae13"
+format = '[ $symbol$branch ]($style)'
+
+[git_status]
+# style = "bg:#00a0ba"
+style = "fg:#fd1a44"
+format = '[$all_status $ahead_behind]($style)'
+
+[time]
+time_format = "%R"
+style = "fg:#cdcdcd"
+format = "[ $time]($style)"
+disabled = false

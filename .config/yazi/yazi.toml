@@ -1,0 +1,35 @@
+[mgr]
+show_hidden = true
+
+[opener]
+play = [
+	{ run = 'mpv "$@"', orphan = true, for = "unix" },
+	# { run = '"C:\Program Files\mpv.exe" %*', orphan = true, for = "windows" }
+]
+edit = [
+	{ run = '$EDITOR "$@"', block = true, for = "unix" },
+	{ run = "%EDITOR% %*",  block = true, for = "windows" },
+]
+open = [
+  { run = 'xdg-open %s', desc = "Open" },
+	# { run = 'xdg-open %s', desc = "Open" },
+]
+img = [
+	{ run = 'qimgv "$@"', desc = "Open" },
+]
+loffice = [
+  { run = 'loffice "$@"', desc = "Open"}
+]
+
+[open]
+rules = [
+	{ mime = "text/*", use = "edit" },
+	{ mime = "video/*", use = "play" },
+	{ mime = "image/*", use = "img" },
+	# { mime = "application/pdf", use = "open" },
+	{ mime = "application/*", use = "open" },
+
+	# { mime = "application/json", use = "edit" },
+	# { name = "*.pdf", use = "open" },
+]
+# ...

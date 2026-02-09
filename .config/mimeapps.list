@@ -1,0 +1,13 @@
+[Default Applications]
+video/mp4=mpv.desktop
+application/pdf=org.pwmt.zathura.desktop
+image/png=qimgv.desktop
+image/jpg=qimgv.desktop
+image/jpeg=qimgv.desktop
+image/gif=qimgv.desktop
+image/webp=qimgv.desktop
+application/text=nvim.desktop
+text/plain=nvim.desktop
+
+[Added Associations]
+text/plain=nvim.desktop;
