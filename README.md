@@ -2,6 +2,7 @@
 
 | usage | the package |
 |----|-------------------|
+| distribution | arch linux |
 | desktop environment | hyprland |
 |notification | dunst | 
 | bluetooth | blueman |
