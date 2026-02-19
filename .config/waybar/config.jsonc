@@ -318,7 +318,7 @@
       //"menu-actions": {
 			//"shutdown": "poweroff",
 			//"reboot": "reboot",
-			//"suspend": "systemctl suspend",
+			//"suspend": "systemc⏸tl suspend",
 			//"hibernate": "systemctl hibernate"
 		},
   "mpris": {
@@ -327,11 +327,11 @@
     "on-click-right": "",
     "on-click-middle": "",
     "player-icons": {
-      "default": "▶",
+      "default": "⏸",
       "mpv": "🎵"
     },
     "status-icons": {
-      "paused": "⏸"
+      "paused": "▶"
     }
   }, 
   "mpris#left": {
