@@ -127,6 +127,7 @@ alias fd='fd -H'
 alias ls='eza --group-directories-first --icons --all'
 alias preview='fzf --preview "bat --color=always {}"'
 alias p='ping 8.8.8.8'
+alias bat='bat -n'
 
 # exporting
 export EDITOR=nvim
