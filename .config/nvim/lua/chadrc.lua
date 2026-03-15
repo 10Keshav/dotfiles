@@ -18,7 +18,7 @@ M.base46 = {
 M.nvdash = { load_on_startup = true }
 M.term = {
   sizes = {
-    vsp = 0.3,
+    vsp = 0.4,
   },
 }
 
