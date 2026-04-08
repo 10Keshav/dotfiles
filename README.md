@@ -1,6 +1,8 @@
 # My Dotfiles
 Yes it's not much but it is something gets the work done lol
 
+## How it looks
+
 ## Installation
 
 ### Step 1
@@ -16,16 +18,16 @@ stow .
 ```
 
 ### Step 2
-Check out the [package_list.txt](package_list.txt) for all the packages you need installed.\
+Check out [package_list.txt](package_list.txt) for all the packages you need installed.\
 You can:\
-Use AUR (yay or paru)
+#### Use AUR (yay or paru)
 ```
 yay -S $(cat package_list.txt)
 ```
 
 ### <center>OR</center>
-Clone the required repos for the packages (you can refer to the table below too)
 
+#### Clone the required repos for the packages (you can refer to the table below too)
 ## How do i make a table again
 | me when the | Packages (along with their github link) |
 |----| ----------- |
@@ -38,8 +40,10 @@ Clone the required repos for the packages (you can refer to the table below too)
 | Application Launcher | [Rofi](https://github.com/davatorium/rofi)|
 | Top bar | [Waybar](https://github.com/alexays/waybar) |
 | Terminal emulator | [Kitty](https://github.com/kovidgoyal/kitty) | 
-| File manager | Nemo (gui)<br>[Yazi](https://github.com/sxyazi/yazi) (tui) |
+| File manager | [Yazi](https://github.com/sxyazi/yazi) (tui)<br>Nemo (gui) |
 | Image viewer | [Qimgv](https://github.com/easymodo/qimgv) |
 | Pdf viewer | [Zathura](https://github.com/pwmt/zathura) |
 | Logout manager? | [Wlogout](https://github.com/ArtsyMacaw/wlogout) |
+
+
 
