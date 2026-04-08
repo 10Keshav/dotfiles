@@ -141,3 +141,4 @@ export VISUAL=nvim
 
 # Created by `pipx` on 2025-10-19 06:09:54
 export PATH="$PATH:/home/keshav/.local/bin"
+export MANPAGER='nvim +Man!'

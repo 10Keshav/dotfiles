@@ -4,18 +4,8 @@ Yes it's not much but it is something gets the work done lol
 ## Installation
 
 ### Step 1
-You can read the package_list.txt for all the packages you need installed.
-You can:
-- Use AUR
-```
-yay -S $(cat package_list.txt) # AUR (or paru)
-```
-
-- clone the required repos for the packages
-
-### Step 2
-Clone this repo 
-`cd` to it
+Clone this repo\
+`cd` to it\
 Let it stow
 ```
 git clone https://github.com/10Keshav/dotfiles.git
@@ -24,6 +14,14 @@ stow .
 ```
 
 
+### Step 2
+Check out the package_list.txt for all the packages you need installed.\
+You can:
+- Use AUR (yay or paru)
+```
+yay -S $(cat package_list.txt)
+```
+- clone the required repos for the packages
 
 ## how do i create a table again
 
