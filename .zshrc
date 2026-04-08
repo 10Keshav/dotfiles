@@ -130,15 +130,7 @@ alias p='ping 8.8.8.8'
 alias bat='bat -n'
 alias rg='rg --hidden'
 
-# exporting
-export EDITOR=nvim
-export VISUAL=nvim
-
 # idk man
 # date=$(uptime | cut -c2,3,4,5,6)
 # uptime=$(uptime -p | sed "s/up //")
 # echo " It's $date\n Uptime: $uptime"
-
-# Created by `pipx` on 2025-10-19 06:09:54
-export PATH="$PATH:/home/keshav/.local/bin"
-export MANPAGER='nvim +Man!'
