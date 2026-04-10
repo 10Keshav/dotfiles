@@ -55,7 +55,7 @@ return {
         "rust",
         "java",
       },
-      branch = "master",
+      branch = "main",
       lazy = false,
       build = ":TSUpdate",
     },

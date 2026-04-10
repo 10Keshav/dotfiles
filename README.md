@@ -2,7 +2,7 @@
 Yes it's not much but it is something gets the work done lol
 
 ## How it looks
-
+> will add screenshots here lol
 ## Installation
 
 ### Step 1
@@ -27,7 +27,7 @@ yay -S $(cat package_list.txt)
 
 ### <center>OR</center>
 
-#### Clone the required repos for the packages (you can refer to the table below too)
+#### Clone the required repos for the packages (you can refer to the table below for the major ones too)
 ## How do i make a table again
 | me when the | Packages (along with their github link) |
 |----| ----------- |
