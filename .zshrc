@@ -129,6 +129,7 @@ alias preview='fzf --preview "bat --color=always {}"'
 alias p='ping 8.8.8.8'
 alias bat='bat -n'
 alias rg='rg --hidden'
+alias tree='ls --tree -I .git'
 
 # idk man
 # date=$(uptime | cut -c2,3,4,5,6)
