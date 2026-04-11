@@ -127,7 +127,7 @@
         }
     },
     "tray": {
-         "icon-size": 28,
+         "icon-size": 22,
         "spacing": 20,
          "icons": {
         //   "TelegramDesktop": "$HOME/.local/share/icons/hicolor/16x16/apps/telegram.png"
