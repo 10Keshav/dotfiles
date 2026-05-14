@@ -8,6 +8,11 @@ image/gif=qimgv.desktop
 image/webp=qimgv.desktop
 application/text=nvim.desktop
 text/plain=nvim.desktop
+text/html=firefox.desktop
+x-scheme-handler/http=firefox.desktop
+x-scheme-handler/https=firefox.desktop
+x-scheme-handler/about=firefox.desktop
+x-scheme-handler/unknown=firefox.desktop
 
 [Added Associations]
 text/plain=nvim.desktop;
