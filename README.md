@@ -1,8 +1,9 @@
 # My Dotfiles
-Yes it's not much but it is something gets the work done lol
+Yes it's not much but it is something, gets the work done lol
 
 ## How it looks
-> will add screenshots here lol
+> will add screenshots here lol \
+> it has been a **few** days and i still have not 😁️
 ## Installation
 
 ### Step 1
@@ -19,7 +20,7 @@ stow .
 
 ### Step 2
 Check out [package_list.txt](package_list.txt) for all the packages you need installed.\
-You can:\
+You can:
 #### Use AUR (yay or paru)
 ```
 yay -S $(cat package_list.txt)
