@@ -46,5 +46,3 @@ yay -S $(cat package_list.txt)
 | Pdf viewer | [Zathura](https://github.com/pwmt/zathura) |
 | Logout manager? | [Wlogout](https://github.com/ArtsyMacaw/wlogout) |
 
-
-
