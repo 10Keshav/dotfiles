@@ -6,10 +6,17 @@ Yes it's not much but it is something, gets the work done lol
 
 <!-- <video src="assets/vid.mp4" height="650" width="1040" controls></video> -->
 
+https://github.com/user-attachments/assets/e6855606-7108-47a3-9da8-742df93dc9dd
+
 Yes, I do not use a wallpaper :>\
 <!-- ![homescreen](/assets/homescreen.png) -->
 <!-- ![rofi](/assets/rofi.png) -->
 <!-- ![tiling](/assets/tiling.png) -->
+
+<img width="1920" height="1200" alt="tiling" src="https://github.com/user-attachments/assets/1691bbe4-a633-4f4d-a9b7-60cd411a6f3a" />
+<img width="1920" height="1200" alt="rofi" src="https://github.com/user-attachments/assets/01498992-40aa-426f-95fc-a6e4b3946d68" />
+<img width="1920" height="1200" alt="homescreen" src="https://github.com/user-attachments/assets/327b1c09-8a40-4d4e-ba0f-446e7aab90bd" />
+
 
 ## Installation
 
