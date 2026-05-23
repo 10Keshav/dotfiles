@@ -13,7 +13,7 @@ Clone this repo\
 git clone https://github.com/10Keshav/dotfiles.git
 cd dotfiles
 ```
-Let it stow 🥶
+Use stow 
 ```
 stow .
 ```
@@ -28,7 +28,7 @@ yay -S $(cat package_list.txt)
 
 ### <center>OR</center>
 
-#### Clone the required repos for the packages (you can refer to the table below for the major ones too)
+#### Install the required packages (you can refer to the table below for the major ones too)
 ## How do i make a table again
 | me when the | Packages (along with their github link) |
 |----| ----------- |
