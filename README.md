@@ -4,6 +4,14 @@ Yes it's not much but it is something, gets the work done lol
 ## How it looks
 > will add screenshots here lol \
 > it has been a **few** days and i still have not 😁️
+
+<!-- [![vid](./showcase/homescreen.png)](.showcase/vid.mp4) -->
+<!-- <video src=".showcase/vid.mp4" height="650" width="1040" controls></video> -->
+Yes, I do not use a wallpaper :>\
+![homescreen](./showcase/homescreen.png)
+![rofi](./showcase/rofi.png)
+![tiling](./showcase/tiling.png)
+
 ## Installation
 
 ### Step 1
