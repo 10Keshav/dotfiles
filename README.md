@@ -1,5 +1,3 @@
-
-https://github.com/user-attachments/assets/b67ad7c1-423c-47d3-b5d1-878fbea47c10
 # My Dotfiles
 Yes it's not much but it is something, gets the work done lol
 
