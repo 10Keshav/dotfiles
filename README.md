@@ -6,11 +6,13 @@ Yes it's not much but it is something, gets the work done lol
 > it has been a **few** days and i still have not 😁️
 
 <!-- [![vid](./showcase/homescreen.png)](.showcase/vid.mp4) -->
-<video src="assets/vid.mp4" height="650" width="1040" controls></video>
+
+<!-- <video src="assets/vid.mp4" height="650" width="1040" controls></video> -->
+
 Yes, I do not use a wallpaper :>\
-![homescreen](/assets/homescreen.png)
-![rofi](/assets/rofi.png)
-![tiling](/assets/tiling.png)
+<!-- ![homescreen](/assets/homescreen.png) -->
+<!-- ![rofi](/assets/rofi.png) -->
+<!-- ![tiling](/assets/tiling.png) -->
 
 ## Installation
 
