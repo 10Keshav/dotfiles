@@ -56,7 +56,7 @@
         "wallpaper",
         "packages",
         "uptime",
-        "media",
+        //"media",
         "locale",
         {
             "type": "custom", // InformationEnd
