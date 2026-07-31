@@ -4,8 +4,8 @@ set selection-clipboard clipboard
 set adjust-open "best-fit"
 set pages-per-row 1
 # set recolor "true"
-unmap f
-map f toggle_fullscreen
+# unmap f
+map m toggle_fullscreen
 map [fullscreen] f toggle_fullscreen
 set window-height 1200
 set window-width 1920
