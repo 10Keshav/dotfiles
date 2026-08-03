@@ -7,3 +7,12 @@
 # Credits
 
 1) Lazyvim starter https://github.com/LazyVim/starter as nvchad's starter was inspired by Lazyvim's . It made a lot of things easier!
+
+## lil changes made in other config files
+```lua
+-- ~/.local/share/nvim/lazy/rustaceanvim/lua/rustaceanvim/server_status.lua
+51   if type(vim.lsp.inlay_hint) == 'table' then
+52     local client = vim.lsp.get_client_by_id(ctx.client_id)
+53     for _, bufnr in ipairs(client.attached_buffers) do
+54       bufnr = tonumber(bufnr)
+```
