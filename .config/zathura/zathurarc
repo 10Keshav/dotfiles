@@ -1,4 +1,5 @@
 set selection-clipboard clipboard
+set selection-notification false
 # set default-bg "#000000" #00
 # set default-fg "#F7F7F6" #01
 set adjust-open "best-fit"
