@@ -20,6 +20,13 @@ hl.monitor({
 	position = "auto",
 	scale = "1",
 })
+hl.monitor({
+	output = "HDMI-A-1",
+	mode = "3840x2160",
+	position = "auto",
+	scale = "1",
+	mirror = "eDP-1",
+})
 
 ---------------------
 ---- MY PROGRAMS ----
@@ -255,6 +262,14 @@ hl.window_rule({
 	size = "400 400",
 })
 
+hl.window_rule({
+	name = "vpn_quit_thing",
+	match = { class = "protonvpn-app" },
+	size = "440 171",
+	float = true,
+	move = "1478 52",
+})
+
 -- layer rules
 hl.layer_rule({
 	name = "rofi-pop",
@@ -355,6 +370,7 @@ hl.bind(mainMod .. " + Space", hl.dsp.exec_cmd(menu))
 hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))
 hl.bind("Print", hl.dsp.exec_cmd('grim -g "$(slurp)" - | wl-copy'))
+-- hl.bind("Print", hl.dsp.exec_cmd('grim -g "$(slurp)" "$HOME/Pictures/Screenshots/$(date).png'))
 hl.bind(
 	mainMod .. " + V",
 	hl.dsp.exec_cmd("cliphist list | rofi -dmenu -display-columns 2 | cliphist decode | wl-copy")
