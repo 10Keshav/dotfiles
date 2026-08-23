@@ -5,22 +5,21 @@ linemode = "size"
 
 [opener]
 play = [
-	{ run = 'mpv "$@"', orphan = true, for = "unix" },
+	{ run = 'mpv %s', orphan = true, for = "unix" },
 	# { run = '"C:\Program Files\mpv.exe" %*', orphan = true, for = "windows" }
 ]
 edit = [
-	{ run = '$EDITOR "$@"', block = true, for = "unix" },
-	{ run = "%EDITOR% %*",  block = true, for = "windows" },
+	{ run = '$EDITOR %s', block = true, for = "unix" },
 ]
 open = [
   { run = 'xdg-open %s', desc = "Open" },
 	# { run = 'xdg-open %s', desc = "Open" },
 ]
 img = [
-	{ run = 'qimgv "$@"', desc = "Open" },
+	{ run = 'qimgv %s', desc = "Open" },
 ]
 loffice = [
-  { run = 'loffice "$@"', desc = "Open"}
+  { run = 'loffice %s', desc = "Open"}
 ]
 
 [open]
