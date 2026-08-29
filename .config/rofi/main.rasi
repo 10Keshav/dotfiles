@@ -1,13 +1,13 @@
 configuration {
-  modi: "drun";
+  modi: "drun,filebrowser";
   filebrowser {
     show-hidden: true;
     directory: "/home/keshav/";
     command: "xdg-open";
   }
   show-icons: true;
-  // display-drun: "";
-  // display-filebrowser: "";
+  display-drun: "";
+  display-filebrowser: "";
   drun-display-format: "{name}";
   //window-format: "{w}  {c}  {t}";
 }
@@ -37,13 +37,11 @@ window {
   anchor: center;
   // height: 40%;
   // width: 510px;
-  width: 20%;
+  width: 25%;
   margin: 0;
-  border-radius: 6px;
-  padding: 4px;
+  border-radius: 16px;
   border: 2;
   border-color: @selected;
-
  // background-color: @background;
 }
 /* boxes ig */
@@ -51,7 +49,7 @@ mainbox {
   enabled: true;
   background-color: transparent;
   // background-image: url("~/idkwallpapor/shiverdreamywhat.jpeg",height);
-  spacing: 2px;
+  spacing: 4px;
   orientation: vertical;
   children: ["inputbar", "listbox"];
 }
@@ -59,9 +57,9 @@ mainbox {
 /* list related */
 listbox {
   enabled: true;
-  spacing: 2px;
+  spacing: 4px;
   orientation: vertical;
-  padding: 2px 0px;
+  padding: 4px 5px;
   children: ["listview"];
 }
 
@@ -73,8 +71,8 @@ listview {
   dynamic: true;
   lines: 10;
   cycle: false;
-  spacing: 0px;
-  columns: 1;
+  spacing: 4px;
+  columns: 2;
   scrollbar: false;
 }
 scrollbar {
@@ -84,49 +82,53 @@ scrollbar {
 /* searchbar and all */
 inputbar {
   enabled: true;
-  padding: 0px 0px;
-  margin: 0px;
+  padding: 4px 8px;
+  margin: 2px;
   // border-radius: 16px;
   spacing: 0px;
   orientation: horizontal;
-  border-radius: 4px;
-  background-color: @background-alt;
-  // children: [ "entry", "num-filtered-rows", "textbox", "num-rows", "dummy", "mode-switcher"];
-  children: ["entry","dummy","num-filtered-rows", "textbox", "num-rows"];
-  // children: [ "entry"];
+  background-color: transparent;
+  children: [ "entry", "num-filtered-rows", "textbox", "num-rows", "dummy", "mode-switcher"];
+}
+// textbox-prompt-colon {
+//   enabled: true;
+//   padding: 2px 4px;
+//   margin: 0;
+//   border-radius: 100%;
+//   expand: false;
+//   str: " ";
+//   background-color: @background-alt;
+// }
+num-filtered-rows,num-rows,textbox{
+  font: "mono 12";
+  text-color: #888888;
+  margin: 8px 0 0 0; 
+  expand: false;
+  content: "/";
+}
+num-filtered-rows {
+  padding: 0 0 0 9px;
 }
 
 entry {
   enabled: true;
-  padding: 6px 5px;
-  margin: 0;
-  border-radius: 6px;
-  width: calc(20% - 75px);
+  padding: 6px 14px;
+  border-radius: 16px;
+  width: 12%;
   expand: false;
   placeholder: "Search";
-  background-color: transparent;
-}
-
-num-filtered-rows,num-rows,textbox{
-  expand: false;
-  font: "mono 12";
-  text-color: #888888;
-  margin: 5px 0 0 0; 
-  padding: 0;
-}
-textbox {
-  content: "/";
+  background-color: @background-alt;
+  // width: 10px;
 }
 dummy {
-  enabled: true;
-  expand: false;
+  expand: true;
   background-color: transparent;
 }
 
 /* mode switcher and the buttons */
 mode-switcher {
   expand: false;
-  enabled: false;
+  enabled: true;
   background-color: transparent;
   text-color: @foreground;
   spacing: 4px;
@@ -136,9 +138,9 @@ button {
   font: "JetBrainsMono Mono Nerd Font 17";
   background-color: @background-alt;
   text-color: @foreground;
-  border-radius: 3px;
+  border-radius: 10px;
   width: 55px;
-  // padding: 0px 8px;
+  padding: 0px 8px;
   margin: 0;
   padding: 0 6px 0 0;
 }
@@ -149,8 +151,8 @@ button selected {
 /* elemens */
 element {
   enabled: true;
-  padding: 6px;
-  border-radius: 2px;
+  padding: 7px;
+  border-radius: 4px;
 }
 element normal.normal {
   background-color: transparent;
