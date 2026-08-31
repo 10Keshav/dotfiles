@@ -17,7 +17,7 @@
         "mpris#left",
         "mpris",
         "mpris#right"
-       // "hyprland/workspaces#win",
+       // "hyprland/workspaces#win"
        // "wlr/taskbar",
        // "hyprland/window",
        // "mpd"
@@ -188,8 +188,7 @@
          "days":       "<span color='#90E0EF'><b>{}</b></span>",
          "weeks":      "<span color='#2B3A67'><b>{}</b></span>",
          "weekdays":   "<span color='#CAF0F8'><b>{}</b></span>",
-         "today":      "<span color='#eeab4a'><b>{}</b></span>"
-         //"today":      "<span color='#be86fa'><b>{}</b></span>"
+         "today":      "<span background='#eeab4a' color='#024A5D'><b>{}</b></span>"
         }
       },
       "actions": {
