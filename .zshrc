@@ -1,3 +1,5 @@
+export PATH="$HOME/.npm-global/bin:$PATH"
+export PATH="/usr/bin:$PATH"
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
@@ -123,7 +125,7 @@ alias work='sudo systemctl restart NetworkManager'
 unalias ls
 alias noti='notify-send "some notification here hello hi add a new line to check more stuff"'
 alias lg='lazygit'
-# alias fd='fd -H'
+alias fd='fd -H'
 alias ls='eza --group-directories-first --icons --all'
 alias preview='fzf --preview "bat --color=always {}"'
 alias p='ping 8.8.8.8'
