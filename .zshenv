@@ -12,3 +12,5 @@ export PATH="$PATH:/usr/local/go/bin"
 export PATH="$PATH:$(go env GOPATH)/bin"
 # export JAVA_HOME="/usr/lib/jvm/default/bin/java"
 export PATH_TO_FX="/home/keshav/FXjava/javafx-sdk-26/lib"
+# OpenClaw on 06-09-2026 17:30
+export PATH="$HOME/.openclaw/bin:$PATH"
