@@ -36,6 +36,7 @@ hl.monitor({
 local terminal = "kitty"
 local fileManager = "nemo"
 local menu = "rofi -show drun"
+-- local menu = "dmenu_run -sb '#3333aa' -sf '#000444' -b"
 
 -------------------
 ---- AUTOSTART ----
