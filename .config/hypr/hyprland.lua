@@ -33,7 +33,7 @@ hl.monitor({
 ---------------------
 
 -- Set programs that you use
-local terminal = "kitty"
+local terminal = "foot"
 local fileManager = "nemo"
 local menu = "rofi -show drun"
 -- local menu = "dmenu_run -sb '#3333aa' -sf '#000444' -b"
@@ -364,7 +364,7 @@ local closeWindowBind = hl.bind(mainMod .. " + C", hl.dsp.window.close())
 -- 	mainMod .. " + M",
 -- 	hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'")
 -- )
-hl.bind(mainMod .. " + E", hl.dsp.exec_cmd('kitty zsh -ci "yazi; exec zsh"'))
+hl.bind(mainMod .. " + E", hl.dsp.exec_cmd('foot zsh -ci "yazi; exec zsh"'))
 hl.bind(mainMod .. " + M", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen({ action = "toggle" }))
 hl.bind(mainMod .. " + Space", hl.dsp.exec_cmd(menu))
