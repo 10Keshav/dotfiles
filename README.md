@@ -11,7 +11,7 @@ Yes it's not much but it is something, gets the work done lol
 
 https://github.com/user-attachments/assets/e6855606-7108-47a3-9da8-742df93dc9dd
 
-Yes, I do not use a wallpaper :>\
+Yes, I do not use a wallpaper :>
 <!-- ![homescreen](/assets/homescreen.png) -->
 <!-- ![rofi](/assets/rofi.png) -->
 <!-- ![tiling](/assets/tiling.png) -->
