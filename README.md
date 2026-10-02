@@ -46,20 +46,19 @@ yay -S $(cat package_list.txt)
 ### <center>OR</center>
 
 #### Install the required packages (you can refer to the table below for the major ones too)
-## How do i make a table again
-| me when the | Packages (along with their github link) |
-|----| ----------- |
+## System & Desktop Software
+| Topic | Details (along with their github link) |
+|----| :-----------: |
 | Distribution | Arch|
 | Desktop environment | [Hyprland](https://github.com/hyprwm/hyprland) |
-| Notification | [Dunst](https://github.com/dunst-project/dunst) | 
-| Bluetooth | [Blueman](https://github.com/blueman-project/blueman) |
-| Audio | Wireplumber + Pulseaudio<br>(yeah i have both lol idk why) |
-| Editor | Neovim [(NvChad)](https://github.com/nvchad/nvchad)|
-| Application Launcher | [Rofi](https://github.com/davatorium/rofi)|
-| Top bar | [Waybar](https://github.com/alexays/waybar) |
-| Terminal emulator | [Kitty](https://github.com/kovidgoyal/kitty) | 
-| File manager | [Yazi](https://github.com/sxyazi/yazi) (tui)<br>Nemo (gui) |
+| Notification daemon | [Dunst](https://github.com/dunst-project/dunst) | 
+| Bluetooth manager | [Blueman](https://github.com/blueman-project/blueman) |
+| Audio | Wireplumber + Pulseaudio |
+| Text editor | Neovim [(NvChad)](https://github.com/nvchad/nvchad)|
+| Application launcher | [Rofi](https://github.com/davatorium/rofi)|
+| Status bar | [Waybar](https://github.com/alexays/waybar) |
+| Terminal emulator | [Foot](https://codeberg.org/dnkl/foot) | 
+| File manager | [Yazi](https://github.com/sxyazi/yazi) (TUI)<br>Nemo (GUI) |
 | Image viewer | [Qimgv](https://github.com/easymodo/qimgv) |
-| Pdf viewer | [Zathura](https://github.com/pwmt/zathura) |
-| Logout manager? | [Wlogout](https://github.com/ArtsyMacaw/wlogout) |
-
+| PDF viewer | [Zathura](https://github.com/pwmt/zathura) |
+| Logout menu | [Wlogout](https://github.com/ArtsyMacaw/wlogout) |
