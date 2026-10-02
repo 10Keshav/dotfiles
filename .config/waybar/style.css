@@ -12,7 +12,7 @@
 
 window#waybar {
 	/* background-color: rgba(43, 48, 59, 0.5); */
-	background: rgba(0,0,25,0.7);
+	background: rgba(0,0,10,0.7);
 	/* border-bottom: 3px solid rgba(100, 114, 125, 0.5); */
 	/* border-bottom: 2px solid rgba(0,100,200,0.7); */
 	color: #ffffff;
@@ -57,7 +57,7 @@ button:hover {
 /* } */
 
 #workspaces {
-	color: rgba(20, 40, 196, 0.8);
+	/* color: rgba(20, 40, 196, 0.8); */
 	background: transparent;
 	/* background: rgba(10,50,150, 0.7); */
 	border-radius: 0px;
@@ -80,7 +80,7 @@ button:hover {
 }
 
 #workspaces button.active {
-	background: rgba(0, 0, 70, 0.9);
+	background: rgba(0, 0, 95, 0.9);
 }
 
 #workspaces button.focused {
@@ -104,8 +104,12 @@ button:hover {
 	margin-left: 0;
 }
 
+.modules-center {
+  margin: 0 0 0 -30px;
+}
+
 .modules-right {
-	background-color: #00025b;
+	background-color: transparent;
 	border-radius: 0px;
 	padding: 0 6px 0 0;
 }
@@ -120,13 +124,9 @@ button:hover {
 #battery.plugged,
 #backlight,
 #network,
-#pulseaudio,
-#pulseaudio.mic.source-muted,
-#bluetooth,
 #custom-media,
 #tray,
-#custom-power,
-#keyboard-state {
+#custom-power {
 	color: white;
 	padding: 0 10px;
 	background: transparent;
@@ -136,7 +136,7 @@ button:hover {
 
 #clock {
 	color: white;
-	background-color: #00025b;
+	background-color: transparent;
 	padding: 0px 10px;
 	border-radius: 0px;
 }
@@ -169,6 +169,13 @@ label:focus {
 
 #network.disconnected {
 	background-color: #f53c3c;
+}
+
+#pulseaudio,#pulseaudio.mic.source-muted {
+	color: white;
+	padding: 0 10px;
+	background: transparent;
+	border-radius: 0px
 }
 
 #pulseaudio.vol {
@@ -210,6 +217,7 @@ label:focus {
 }
 
 #bluetooth {
+  color: white;
 	background: transparent;
 	padding: 2px 10px;
 	font-size: 18px;
@@ -256,7 +264,7 @@ label:focus {
 
 #keyboard-state>label.locked {
 	opacity: 1;
-	font-size: 20px;
+	font-size: 16px;
 }
 
 #scratchpad {
@@ -291,18 +299,15 @@ label:focus {
 #mpris {
   margin: 0;
   padding: 0;
-  min-width: 40px
+  min-width: 30px;
 }
+
 #mpris.left {
   padding: 0;
   margin: 0;
 }
+
 #mpris.right  {
   padding: 0;
   margin: 0;
 }
-
-#workspaces, #time, #clock, .modules-right {
-  background: transparent;
-}
-

@@ -6,7 +6,7 @@
     "margin-top": 0,
     "reload_style_on_change": true,
     "width": 1920, // Waybar width
-    "spacing": 13, // Gaps between modules (4px)
+    "spacing": 12, // Gaps between modules (4px)
     //"autohide": true,
     //"autohide-blocked": false,
     //"exclusive": true,
@@ -24,21 +24,15 @@
         //"custom/media"
     ],
     "modules-center": [     
-        "custom/logo",
+        //"custom/logo",
         "clock#day",
         "clock#time",
         "clock#date"
     ],
     "modules-right": [
-        //"mpd",
-        //"idle_inhibitor",
-        //"custom/notification",
         "pulseaudio#vol",
-        //"pulseaudio/slider",
         "pulseaudio#mic",
-        //"power-profiles-daemon",
         "bluetooth",
-        //"backlight",
         //"network",
         "battery",
         "tray",
