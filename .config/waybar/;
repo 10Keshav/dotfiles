@@ -81,6 +81,7 @@ button:hover {
 
 #workspaces button.active {
 	background: rgba(0, 0, 70, 0.9);
+  background: pink
 }
 
 #workspaces button.focused {

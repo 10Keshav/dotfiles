@@ -5,14 +5,14 @@
 	/* `otf-font-awesome` is required to be installed for icons */
 	/* font-family: "JetBrainsMono Nerd Font Propo", FontAwesome, Roboto, Helvetica, Arial, sans-serif; */
 	font-family: "JetBrainsMono Nerd Font Propo", sans-serif;
-	font-size: 16px;
+	font-size: 18px;
 	font-weight: bold;
 	box-shadow: none;
 }
 
 window#waybar {
 	/* background-color: rgba(43, 48, 59, 0.5); */
-	background: rgba(0,0,25,0.7);
+	background: transparent;
 	/* border-bottom: 3px solid rgba(100, 114, 125, 0.5); */
 	/* border-bottom: 2px solid rgba(0,100,200,0.7); */
 	color: #ffffff;
@@ -60,18 +60,18 @@ button:hover {
 	color: rgba(20, 40, 196, 0.8);
 	background: transparent;
 	/* background: rgba(10,50,150, 0.7); */
-	border-radius: 0px;
-	padding: 0 0px
+	border-radius: 12px;
+	padding: 0 8px
 }
 
 #workspaces button {
 	text-shadow: none;
-	border-radius: 0px;
+	border-radius: 8px;
 	background-color: transparent;
 	color: #ffffff;
 	transition-property: background;
 	transition-duration: 0.2s;
-	min-width: 20px;
+	min-width: 30px;
 	margin: 0 5px;
 }
 
@@ -80,7 +80,7 @@ button:hover {
 }
 
 #workspaces button.active {
-	background: rgba(0, 0, 70, 0.9);
+	background: rgba(10, 30, 120, 0.9);
 }
 
 #workspaces button.focused {
@@ -106,7 +106,7 @@ button:hover {
 
 .modules-right {
 	background-color: #00025b;
-	border-radius: 0px;
+	border-radius: 18px;
 	padding: 0 6px 0 0;
 }
 
@@ -130,15 +130,16 @@ button:hover {
 	color: white;
 	padding: 0 10px;
 	background: transparent;
-	border-radius: 0px
+	border-radius: 12px
 }
 
 
 #clock {
 	color: white;
+	font-size: 20px;
 	background-color: #00025b;
 	padding: 0px 10px;
-	border-radius: 0px;
+	border-radius: 12px;
 }
 
 @keyframes blink {
@@ -172,8 +173,8 @@ label:focus {
 }
 
 #pulseaudio.vol {
-  border-radius: 0px;
-  padding: 0 10px;
+  border-radius: 18px 12px 12px 18px;
+  padding: 0 10px 0 14px;
 }
 
 #pulseaudio:hover {
@@ -212,8 +213,8 @@ label:focus {
 #bluetooth {
 	background: transparent;
 	padding: 2px 10px;
-	font-size: 18px;
-	border-radius: 0px;
+	font-size: 20px;
+	border-radius: 10px;
 }
 
 #bluetooth:hover {
@@ -227,7 +228,7 @@ label:focus {
 
 #custom-logo {
   padding: 0 8px;
-  border-radius: 0px;
+  border-radius: 8px;
   min-width: 20px;
   transition-duration: 0.2s;
 }
@@ -236,6 +237,30 @@ label:focus {
   background-color: #00025b;
 }
 
+#custom-media {
+	background-color: #66cc99;
+	color: #2a5c45;
+	min-width: 100px;
+}
+
+#custom-media.custom-spotify {
+	background-color: #66cc99;
+}
+
+#custom-media.custom-vlc {
+	background-color: #ffa000;
+}
+
+#temperature {
+	background-color: #f0932b;
+}
+
+#temperature.critical {
+	background-color: #eb4d4b;
+}
+
+
+
 #tray>.passive {
 	-gtk-icon-effect: dim;
 }
@@ -243,6 +268,40 @@ label:focus {
 #tray>.needs-attention {
 	-gtk-icon-effect: highlight;
 	background-color: #eb4d4b;
+}
+
+#idle_inhibitor {
+	background-color: #2d3436;
+}
+
+#idle_inhibitor.activated {
+	background-color: #ecf0f1;
+	color: #2d3436;
+}
+
+#mpd {
+	background-color: #66cc99;
+	color: #2a5c45;
+}
+
+#mpd.disconnected {
+	background-color: #f53c3c;
+}
+
+#mpd.stopped {
+	background-color: #90b1b1;
+}
+
+#mpd.paused {
+	background-color: #51a37a;
+}
+
+#language {
+	background: #00b093;
+	color: #740864;
+	padding: 0 5px;
+	margin: 0 5px;
+	min-width: 16px;
 }
 
 #keyboard-state {
@@ -256,7 +315,7 @@ label:focus {
 
 #keyboard-state>label.locked {
 	opacity: 1;
-	font-size: 20px;
+	font-size: 20
 }
 
 #scratchpad {
@@ -301,8 +360,3 @@ label:focus {
   padding: 0;
   margin: 0;
 }
-
-#workspaces, #time, #clock, .modules-right {
-  background: transparent;
-}
-
