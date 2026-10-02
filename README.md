@@ -2,6 +2,9 @@
 Yes it's not much but it is something, gets the work done lol
 
 ## How it looks
+> NOTE: Rofi and Waybar may not look the same as in the video/screenshots, that is because I have updated them
+The old configs are still in their respective directories with some other names. You can just rename the files accordingly OR even delete the one you prefer less :)
+
 <!-- [![vid](./showcase/homescreen.png)](.showcase/vid.mp4) -->
 
 <!-- <video src="assets/vid.mp4" height="650" width="1040" controls></video> -->
