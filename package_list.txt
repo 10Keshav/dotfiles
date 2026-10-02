@@ -18,6 +18,8 @@ chaotic-mirrorlist
 clang
 cliphist
 cmake
+cpupower
+cronie
 debuginfod
 dmenu
 dmidecode
@@ -44,10 +46,6 @@ hugo
 hypridle
 hyprland
 hyprlock
-i3-wm
-i3blocks
-i3lock
-i3status
 imagemagick
 inxi
 iw
@@ -135,6 +133,7 @@ wf-recorder
 wget
 wireless_tools
 wireplumber
+wireshark-qt
 wlogout
 wlr-protocols
 wlroots0.20
@@ -150,6 +149,7 @@ xorg-server
 xorg-xcursorgen
 xorg-xinit
 xorg-xinput
+xorg-xkill
 yay
 yay-debug
 yazi
