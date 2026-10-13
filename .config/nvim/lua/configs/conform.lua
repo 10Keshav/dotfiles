@@ -6,8 +6,9 @@ local options = {
     rust = { "rustfmt" },
     -- java = { "prettier" },
     -- python = { "prettier" },
-    -- css = { "prettier" },
-    -- html = { "prettier" },
+    css = { "prettier" },
+    html = { "prettier" },
+    javascript = { "prettier" },
   },
 
   format_after_save = {
