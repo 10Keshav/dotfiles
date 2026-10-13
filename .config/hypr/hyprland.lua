@@ -96,7 +96,7 @@ hl.permission("/usr/lib/xdg-desktop-portal-hyprland", "screencopy", "allow")
 hl.config({
 	general = {
 		gaps_in = 4,
-		gaps_out = 5,
+		gaps_out = 3,
 
 		border_size = 2,
 
@@ -371,6 +371,7 @@ hl.bind(mainMod .. " + Space", hl.dsp.exec_cmd(menu))
 hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))
 hl.bind("Print", hl.dsp.exec_cmd('grim -g "$(slurp)" - | wl-copy'))
+-- hl.bind("Print", hl.dsp.exec_cmd('grim -g "$(slurp)" - | swappy -f -'))
 -- hl.bind("Print", hl.dsp.exec_cmd('grim -g "$(slurp)" "$HOME/Pictures/Screenshots/$(date "+%Y%m%d_%H%M%S").png"'))
 hl.bind(
 	mainMod .. " + V",
