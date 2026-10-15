@@ -1,0 +1,5 @@
+[mgr]
+prepend_keymap = [
+  { on = "-", run = "back",    desc = "Back to previous directory" },
+  { on = "+", run = "forward", desc = "Forward to next directory" },
+]
