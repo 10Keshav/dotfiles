@@ -51,8 +51,9 @@ hl.on("hyprland.start", function()
 	hl.exec_cmd("nm-applet")
 	hl.exec_cmd("blueman-applet")
 	hl.exec_cmd("dunst")
-	hl.exec_cmd("hypridle &")
+	-- hl.exec_cmd("hypridle &")
 	hl.exec_cmd("waybar &")
+	-- hl.exec_cmd("wbg -s ~/idkwallpapor/ideas.png")
 	hl.exec_cmd("/usr/lib/xdg-desktop-portal-wlr")
 	hl.exec_cmd("/usr/lib/xdg-desktop-portal-hyprland")
 	hl.exec_cmd("wl-paste --type text --watch cliphist store")
@@ -264,7 +265,7 @@ hl.window_rule({
 })
 
 hl.window_rule({
-	name = "vpn_quit_thing",
+	name = "vpn-quit-thing",
 	match = { class = "protonvpn-app" },
 	size = "440 171",
 	float = true,
@@ -312,6 +313,7 @@ hl.config({
 	misc = {
 		force_default_wallpaper = 0, -- Set to 0 or 1 to disable the anime mascot wallpapers
 		disable_hyprland_logo = true, -- If true disables the random hyprland logo / anime girl background. :(
+		middle_click_paste = false,
 	},
 })
 
@@ -372,7 +374,9 @@ hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))
 hl.bind(
 	"Print",
-	hl.dsp.exec_cmd('grim -g "$(slurp)" - | tee "$HOME/Pictures/Screenshots/$(date "+%Y%m%d_%H%M%S").png" | wl-copy')
+	hl.dsp.exec_cmd(
+		'grim -g "$(slurp)" - | tee "$HOME/Pictures/Screenshots/$(date "+%Y%m%d_%H%M%S").png" | wl-copy --type image/png'
+	)
 )
 -- hl.bind("Print", hl.dsp.exec_cmd('grim -g "$(slurp)" - | swappy -f -'))
 -- hl.bind("Print", hl.dsp.exec_cmd('grim -g "$(slurp)" "$HOME/Pictures/Screenshots/$(date "+%Y%m%d_%H%M%S").png"'))
@@ -392,6 +396,12 @@ hl.bind(mainMod .. " + left", hl.dsp.focus({ direction = "left" }))
 hl.bind(mainMod .. " + right", hl.dsp.focus({ direction = "right" }))
 hl.bind(mainMod .. " + up", hl.dsp.focus({ direction = "up" }))
 hl.bind(mainMod .. " + down", hl.dsp.focus({ direction = "down" }))
+
+-- Move window with mainMod + shift + arrow keys
+hl.bind(mainMod .. " + SHIFT + left", hl.dsp.window.move({ direction = "left", group_aware = false }))
+hl.bind(mainMod .. " + SHIFT + right", hl.dsp.window.move({ direction = "right", group_aware = false }))
+hl.bind(mainMod .. " + SHIFT + up", hl.dsp.window.move({ direction = "up", group_aware = false }))
+hl.bind(mainMod .. " + SHIFT + down", hl.dsp.window.move({ direction = "down", group_aware = false }))
 
 -- Switch workspaces with mainMod + [0-9]
 -- Move active window to a workspace with mainMod + SHIFT + [0-9]
