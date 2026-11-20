@@ -1,11 +1,11 @@
 [Default Applications]
 video/mp4=mpv.desktop
 application/pdf=org.pwmt.zathura.desktop
-image/png=qimgv.desktop
-image/jpg=qimgv.desktop
-image/jpeg=qimgv.desktop
-image/gif=qimgv.desktop
-image/webp=qimgv.desktop
+image/png=swappy.desktop
+image/jpg=swappy.desktop
+image/jpeg=swappy.desktop
+image/gif=swappy.desktop
+image/webp=swappy.desktop
 application/text=nvim.desktop
 text/plain=nvim.desktop
 text/html=firefox.desktop
