@@ -375,7 +375,7 @@ hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))
 hl.bind(
 	"Print",
 	hl.dsp.exec_cmd(
-		'grim -g "$(slurp)" - | tee "$HOME/Pictures/Screenshots/$(date "+%Y%m%d_%H%M%S").png" | wl-copy --type image/png'
+		'grim -g "$(slurp)" - | tee "$HOME/Pictures/Screenshots/$(date "+%Y%m%d_%H%M%S").png" | swappy -f - -o - | wl-copy --type image/png '
 	)
 )
 -- hl.bind("Print", hl.dsp.exec_cmd('grim -g "$(slurp)" - | swappy -f -'))

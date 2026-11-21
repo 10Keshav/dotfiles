@@ -16,7 +16,7 @@ open = [
 	# { run = 'xdg-open %s', desc = "Open" },
 ]
 img = [
-	{ run = 'swappy -f %s', desc = "Open" },
+	{ run = 'qimgv %s', desc = "Open" },
 ]
 loffice = [
   { run = 'loffice %s', desc = "Open"}
