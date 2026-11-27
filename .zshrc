@@ -119,6 +119,14 @@ function y() {
 	command rm -f -- "$tmp"
 }
 
+function tn() {
+  tmux new -s "$1" \; split-window -h -p 35
+}
+
+function ta() {
+  tmux attach -t "$1"
+}
+
 # aliases 
 alias ff='fastfetch'
 alias work='sudo systemctl restart NetworkManager'
