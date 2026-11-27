@@ -62,3 +62,4 @@ yay -S $(cat package_list.txt)
 | Image viewer | [Qimgv](https://github.com/easymodo/qimgv) |
 | PDF viewer | [Zathura](https://github.com/pwmt/zathura) |
 | Logout menu | [Wlogout](https://github.com/ArtsyMacaw/wlogout) |
+|  Terminal Multiplexer | [Tmux](https://github.com/tmux/tmux) |
